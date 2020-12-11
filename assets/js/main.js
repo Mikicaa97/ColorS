@@ -61,7 +61,6 @@ document.querySelector(".close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
 })
 
-
 //forma
 const form =document.getElementById('form');
 const username =document.getElementById('username');

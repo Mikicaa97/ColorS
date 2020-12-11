@@ -471,6 +471,10 @@ input {
 }
 
 @media screen and (max-width: 768px) {
+  #abouteme .wprojects {
+    display: block;
+    margin: 0 auto;
+  }
   .hero__heading {
     font-size: 60px;
   }
@@ -981,5 +985,58 @@ input {
     padding: 20px;
     width: 100%;
   }
+}
+
+#abouteme {
+  background-color: #131313;
+}
+
+#abouteme h2 {
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+  margin: 40px 0 40px 0;
+}
+
+#abouteme .wprojects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#abouteme .wprojects .left {
+  width: 50%;
+  text-align: center;
+}
+
+#abouteme .wprojects .left main img {
+  margin-bottom: 50px;
+  width: auto;
+  border-radius: 2%;
+}
+
+#abouteme .wprojects .right {
+  width: 47%;
+}
+
+#abouteme .wprojects .right .ztext {
+  margin-top: 20px;
+  width: 90%;
+}
+
+#abouteme .wprojects .right .ztext p {
+  color: #fff;
+  margin-top: 45px;
+  padding: 20px;
+  text-align: justify;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+#abouteme .wprojects .right .ztext a {
+  margin-left: 11em;
+  padding: 4%;
 }
 /*# sourceMappingURL=style.css.map */
