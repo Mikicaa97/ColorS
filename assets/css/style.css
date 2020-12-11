@@ -540,8 +540,9 @@ input {
 
 .main .main__content p {
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  text-align: justify;
 }
 
 .main__btn {
