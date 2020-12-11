@@ -243,7 +243,7 @@ input {
   list-style: none;
 }
 
-.navbar_item {
+.navbar__item {
   height: 80px;
 }
 
@@ -292,12 +292,13 @@ input {
   text-decoration: none;
   padding: 10px 20px;
   height: 100%;
+  width: 100%;
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #ee0979;
-  background: -webkit-gradient(linear, left top, right top, from(#ff6a00), to(#ee0979));
-  background: linear-gradient(to right, #ff6a00, #ee0979);
+  background: #833ab4;
+  background: -webkit-gradient(linear, left top, right top, from(#fcb045), color-stop(#fd1d1d), to(#833ab4));
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   color: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -311,26 +312,26 @@ input {
 
 @media screen and (max-width: 960px) {
   .navbar__container {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 80px;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0 !important;
+    padding: 0;
   }
   .navbar__menu {
-    display: -ms-grid !important;
-    display: grid !important;
-    -ms-grid-columns: auto !important;
-        grid-template-columns: auto !important;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
     margin: 0;
     width: 100%;
-    position: absolute !important;
+    position: absolute;
     top: -1000px;
     opacity: 1;
     -webkit-transition: all 0.5s ease;
@@ -344,13 +345,13 @@ input {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 60vh !important;
+    height: 60vh;
     font-size: 1.6rem;
   }
   #navbar__logo {
     padding-left: 25px;
   }
-  .navbar_toggle .bar {
+  .navbar__toggle .bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
@@ -358,17 +359,17 @@ input {
     transition: all 0.3s ease-in-out;
     background: #fff;
   }
-  .navbar_item {
+  .navbar__item {
     width: 100%;
   }
   .navbar__links {
     text-align: center;
     padding: 2rem;
-    width: 100% !important;
-    display: table !important;
+    width: 100%;
+    display: table;
   }
   .navbar__btn {
-    padding-bottom: 2rem !important;
+    padding-bottom: 2rem;
   }
   .button {
     display: -webkit-box;
@@ -381,7 +382,7 @@ input {
         -ms-flex-align: center;
             align-items: center;
     width: 80%;
-    height: 80px !important;
+    height: 80px;
     margin: 0;
   }
   #mobile-menu {
