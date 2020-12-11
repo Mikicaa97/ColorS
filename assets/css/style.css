@@ -64,6 +64,50 @@ input {
   cursor: pointer;
 }
 
+.form__container {
+  background-color: #000000;
+  background: -webkit-gradient(linear, left top, right top, from(#161616), to(#000000));
+  background: linear-gradient(to right, #161616, #000000);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #ff8177;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ff0844), to(#ffb199));
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 100%;
+}
+
+.header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 40px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
 @media screen and (max-width: 960px) {
   .popup-content {
     height: 200px;
