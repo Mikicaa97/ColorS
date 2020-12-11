@@ -71,7 +71,77 @@ form.addEventListener('submit', (e) => {
 
 function checkInputs(){
     const usernameValue = username.value.trim();
-    const emailValue = email.value.trim()
-    const passwordValue = password.value.trim()
-    const password2Value = password2.value.trim()
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
+
+    if(usernameValue === ''){
+
+        prikaziGreskuZa(username, 'Username ne moze biti prazan!');
+    }
+    else{
+        prikaziTacnoZa(username);
+    }
+
+    if(emailValue === ''){
+
+        prikaziGreskuZa(email, 'Email ne moze biti prazan!');
+    }
+    else if(!jeEmial(emailValue)){
+        prikaziGreskuZa(email, 'Email nije ispravan!');
+    }
+    else{
+        prikaziTacnoZa(email);
+    }
+
+    if(passwordValue === ''){
+
+        prikaziGreskuZa(password, 'Password ne moze biti prazan!');
+    }
+    else{
+        prikaziTacnoZa(password);
+    }
+
+    if(password2Value === ''){
+
+        prikaziGreskuZa(password2, 'PasswordTwo ne moze biti prazan!');
+    }
+    else if(password2Value !== passwordValue){
+        prikaziGreskuZa(password2, 'Password nije isti!');
+    }
+    else{
+        prikaziTacnoZa(password2);
+    }
 }
+
+function prikaziGreskuZa(input, message){
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+
+    small.innerText = message;
+
+    formControl.className = 'form-control error';
+}
+
+function prikaziTacnoZa(input){
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
+}
+
+
+
+$(document).ready(function () {
+  
+    $('.first-button').on('click', function () {
+    
+      $('.animated-icon1').toggleClass('open');
+    });
+    $('.second-button').on('click', function () {
+    
+      $('.animated-icon2').toggleClass('open');
+    });
+    $('.third-button').on('click', function () {
+    
+      $('.animated-icon3').toggleClass('open');
+    });
+    });
