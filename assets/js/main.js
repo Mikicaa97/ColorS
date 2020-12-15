@@ -133,14 +133,9 @@ function prikaziTacnoZa(input){
     formControl.className = 'form-control success';
 }
 
-//jQuery
+//jQuery toggle
 $(document).ready(function(){
   $('#iskljuci').click(function(){
-    if($('#sakrititext').is(':visible')){
-      $('#sakrititext').hide();
-    }
-    else{
-      $('#sakrititext').show();
-    }
-  })
-})
+    $('#sakrititext').toggle();
+  });
+});
