@@ -132,3 +132,16 @@ function prikaziTacnoZa(input){
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
 }
+
+//jQuery kad kliknem da nestane p tag
+$(document).ready(function(){
+  $('#sakridugme').click(function(){
+    $('span').hide();
+  });
+});
+
+$(document).ready(function(){
+  $('#prikazidugme').click(function(){
+    $('span').show();
+  });
+});
