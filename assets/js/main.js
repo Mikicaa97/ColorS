@@ -136,6 +136,13 @@ function prikaziTacnoZa(input){
 //jQuery toggle
 $(document).ready(function(){
   $('#iskljuci').click(function(){
-    $('#sakrititext').toggle();
+    $('#sakrititext').slideToggle('slow');
+
+    if($('#sakrititext').is(':visible')){
+      $(this).val('Hide - Show');
+    }
+    else{
+      $(this).val('Show - Hide');
+    }
   });
 });
